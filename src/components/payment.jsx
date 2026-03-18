@@ -27,7 +27,7 @@ function Payment() {
         );
 
         let payload = {courseId:courseid,userId:userid,purchased_at:new Date().toString()}
-        axios.post("http://localhost:2005/buy",payload).then((res)=>{
+        axios.post("https://lmsbackend-oadz.onrender.com/buy",payload).then((res)=>{
           console.log(res.data.data)
           setTimeout(()=>{navigate("/")},2000)
         }).catch((err)=> console.log(err))

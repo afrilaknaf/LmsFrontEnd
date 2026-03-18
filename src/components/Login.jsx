@@ -43,7 +43,7 @@ export default function Login() {
             return
         }
         let payload = { Email: form.email, Password: form.password }
-        axios.post("http://localhost:2005/login", payload).then((res) => {
+        axios.post("https://lmsbackend-oadz.onrender.com/login", payload).then((res) => {
             if (res.data.msg === "Login SuccessFull") {
                 toast.success(res.data.msg)
                 setTimeout(() => {

@@ -55,9 +55,9 @@ export default function LessonVideo() {
         let userIds = Cookies.get("id")
         videos.map((item) => {
             let payload = { userId: userIds, courseId: item.courseId, lessonId: item._id, isCompleted: true }
-            axios.post("http://localhost:2005/Course_progress", payload).then((res) => {
+            axios.post("https://lmsbackend-oadz.onrender.com/Course_progress", payload).then((res) => {
                 // console.log(res.data.data)
-                axios.put(`http://localhost:2005/lessonmodules/${item._id}`,{isCompleted:true}).then((res)=>{
+                axios.put(`https://lmsbackend-oadz.onrender.com/lessonmodules/${item._id}`,{isCompleted:true}).then((res)=>{
                     // console.log(res.data.data)
                 }).catch((err)=>{
                     console.log(err)

@@ -11,14 +11,14 @@ export default function Course() {
     let [is_open, setIs_open] = useState(false)
 
     let Course_get = async () => {
-        await axios.get("http://localhost:2005/course_get").then((res) => {
+        await axios.get("https://lmsbackend-oadz.onrender.com/course_get").then((res) => {
             // console.log(res.data.data)
             setCourse_array(res.data.data)
         }).catch((err) => {
             console.log(err)
         })
         let userId = Cookies.get("id")
-        await axios.get(`http://localhost:2005/users_course/${userId}`).then((res) => {
+        await axios.get(`https://lmsbackend-oadz.onrender.com/users_course/${userId}`).then((res) => {
             // console.log(res.data.data)
             setIspurchased(res.data.data)
         }).catch((err) => {

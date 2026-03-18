@@ -29,7 +29,7 @@ export default function Lessons() {
             setGetCoursed(course)
             let lesson = await Gets(`lessons/${courseid}`)
             setLesson(lesson)
-            axios.get(`http://localhost:2005/course_progress/${studentid}/${courseid}`).then((res) => {
+            axios.get(`https://lmsbackend-oadz.onrender.com/course_progress/${studentid}/${courseid}`).then((res) => {
                 // console.log(res.data)
                 let ar = []
                 ar.push(res.data)

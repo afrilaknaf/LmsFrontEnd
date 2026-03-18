@@ -62,7 +62,7 @@ export default function Signup() {
 
 
 
-        await axios.post("http://localhost:2005/signup", payload).then((res) => {
+        await axios.post("https://lmsbackend-oadz.onrender.com/signup", payload).then((res) => {
             console.log(res.data.data)
             toast.success(res.data.msg)
             setTimeout(() => {
