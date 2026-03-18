@@ -52,32 +52,32 @@ function BasicExample() {
                                     <p><span>Level:</span>{item.level}</p>
                                     <p><span>Price:</span>{item.price}</p>
                                 </div>
-                                </div>
-                                <div id="innerflex03">
-                                    <p><span>Lesson:</span>{item.total_lesson}</p>
-                                    {
-                                        Cookies.get("id") ? <>
-                                            {
-                                                ispurchasedarray(item._id) ? <button onClick={() => navigate(`/lesson/${item._id}`,{state:{unlockedcourse:true}})}>Learn</button> : <button onClick={() => navigate(`/lesson/${item._id}`,{state:{unlockedcourse:false}})}>Unlock Learn</button>
-                                            }
-                                        </> 
-                                            :
-                                            <>
-                                                <button onClick={() => {
-                                                    toast.warn("Please Login to Learn Course")
-                                                }}>Unlock</button>
-                                            </>
-                                    }
+                            </div>
+                            <div id="innerflex03">
+                                <p><span>Lesson:</span>{item.total_lesson}</p>
+                                {
+                                    Cookies.get("id") ? <>
+                                        {
+                                            ispurchasedarray(item._id) ? <button onClick={() => navigate(`/lesson/${item._id}`, { state: { unlockedcourse: true } })}>Learn</button> : <button onClick={() => navigate(`/lesson/${item._id}`, { state: { unlockedcourse: false } })}>Unlock Learn</button>
+                                        }
+                                    </>
+                                        :
+                                        <>
+                                            <button onClick={() => {
+                                                toast.warn("Please Login to Learn Course")
+                                            }}>Unlock</button>
+                                        </>
+                                }
                                 {/* </div> */}
                             </div>
                             <div>
-                               
+
                             </div>
                         </div>
                     ))
                 }
             </div>
-            <div style={{width:"100%",height:"40px",display:"flex",justifyContent:"center",alignItems:"center",marginTop:"30px"}}>
+            <div style={{ width: "100%", height: "40px", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "30px" }}>
                 <button id='coursecenter' onClick={() => navigate("/course")}>More Course<i class="ri-arrow-right-fill"></i></button>
             </div>
             <ToastContainer position='top-right' autoClose={2000} pauseOnHover theme='colored'></ToastContainer>
