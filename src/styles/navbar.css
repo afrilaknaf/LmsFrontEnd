@@ -1,0 +1,133 @@
+#bolder{
+    font-weight: 300;
+}
+
+#list li{
+    list-style: none;
+    transition: all 0.3s;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+#list{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#listss li{
+    list-style: none;
+    transition: all 0.3s;
+    color: black;
+    &:hover{
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+}
+
+#listss{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-flow: column wrap;
+}
+
+#listss span{
+    font-size: 25px;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    padding: 0px 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+}
+
+.navbar h1{
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+#buttonloginandsignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+#buttonloginandsignup button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: white;
+        color: black;
+        transform: translateY(-3px);
+    }
+}
+
+#buttonloginandsignupss{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+#buttonloginandsignupss button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: black;
+        color: white;
+        transform: translateY(-3px);
+    }
+}
+
+.togglemenu{
+    display: none;
+}
+
+.sidecontent{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    color: white;
+    position: absolute;
+    top: 0%;
+    transition: all 0.5s;
+    left: 0%;
+}
+
+@media (min-width:300px) and (max-width: 900px) {
+    #list{
+        display: none;
+    }
+    .togglemenu{
+        display: block;
+    }
+    #buttonloginandsignup{
+        display: none;
+    }
+}

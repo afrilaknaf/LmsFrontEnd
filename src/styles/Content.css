@@ -1,0 +1,67 @@
+.content1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0px;
+}
+
+#content11{
+    max-width: 550px;
+    max-height: 550px;
+}
+
+#content12 h1{
+    font-weight: 600;
+    font-size: 45px;
+    color: teal;
+}
+
+#content12{
+    max-width: 530px;
+    max-height: auto;
+    margin-top: 160px;
+}
+
+#content12 p{
+    font-size: large;
+    color: gray;
+}
+
+#content12 button{
+    width: 100%;
+    height: 40px;
+    border: 2px solid teal;
+    margin: 10px;
+    transition: all 0.3s;
+    color: teal;
+    &:hover{
+        background-color: rgba(0, 128, 128,0.1);
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+.content1{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: self-start;
+    padding: 20px;
+}
+}
+
+@media (min-width:500px) and (max-width:900px){
+.content1{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: self-start;
+    padding: 20px;
+}
+}

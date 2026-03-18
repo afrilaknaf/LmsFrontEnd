@@ -1,0 +1,57 @@
+.youlearn{
+    padding: 30px;
+}
+
+.youlearn section ul li{
+    list-style:circle;
+    font-size: clamp(10px,4vw,15px);
+    line-height: 25px;
+}
+
+.youlearn section h2{
+    color: teal;
+    font-size: clamp(14px,4vw,22px);
+}
+
+.youlearn section p{
+    font-size: clamp(10px,4vw,15px);
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.description{
+    padding: 30px;
+    width: 80%;
+    height: auto;
+}
+
+#introduction p,#learning-approach p,#benefits ul li,#tools{
+    font-size: clamp(10px,4vw,15px);
+    line-height: 25px;
+}
+
+#benefits ul li{
+    list-style: circle;
+}
+
+#benefits h2,#learning-approach h2{
+    font-size: clamp(15px,4vw,22px);
+    color: teal;
+}
+
+#Perfect{
+    padding: 30px;
+    width: 80%;
+    height: auto;
+}
+
+#Perfect h2{
+        font-size: clamp(15px,4vw,22px);
+    color: teal;
+}
+
+#Perfect ul li{
+    list-style: circle;
+    line-height: 25px;
+    font-size: clamp(10px,4vw,15px);
+}

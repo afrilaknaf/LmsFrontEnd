@@ -1,0 +1,146 @@
+.carddetails img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.courses {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* margin-bottom: 30px; */
+}
+
+.coursess {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+
+.carddetails {
+    width: 350px;
+    height: 380px;  
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 128, 128, 0.29);
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 20px teal;
+        /* height: 500px; */
+    }
+}
+
+
+
+.carddetails:hover .hidden_hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-flow: column wrap;
+}
+
+
+
+.carddetails_body h1 {
+    font-size: 22px;
+    color: teal;
+}
+
+.carddetails_body span {
+    font-weight: 600;
+    color: teal;
+}
+
+.carddetails_body p{
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.carddetails_body {
+    width: 100%;
+    height: 120px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    /* padding-bottom: 30px; */
+    overflow: hidden;
+    &:hover{
+        /* background-color: rgba(0, 0, 0, 0.114); */
+    }
+}
+
+
+#innerflex01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-sizing: border-box; */
+    width: 100%;
+    height: 30px;
+}
+
+#innerflex02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+#innerflex03{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    /* margin-top: 20px; */
+}
+
+#innerflex03 p {
+    margin-top: 15px;
+}
+
+#innerflex03 button {
+    width: 160px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+.hidden_hover {
+    display: none;
+    transition: all 0.3s;
+}
+
+#coursecenter {
+    width: 150px;
+    height: 40px;
+    background-color: teal;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: teal;
+    }
+}

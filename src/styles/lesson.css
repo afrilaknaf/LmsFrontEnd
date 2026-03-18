@@ -1,0 +1,363 @@
+.lesson_content {
+    width: 600px;
+    height: auto;
+    padding: 40px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.lesson_content h1 {
+    font-size: clamp(15px,4vw,30px);
+}
+
+#smalllesson {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.locked-ui{
+    text-align: center;
+}
+
+.locked-ui h1{
+    font-size: clamp(15px,4vw,22px);
+}
+
+.locked-ui p{
+    font-size: clamp(12px,4vw,17px);
+}
+
+#smalllesson h3 {
+    font-size: 17px;
+    max-width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#smalllesson p {
+    max-width: 150px;
+    height: 30px;
+    font-size: clamp(10px, 4vw, 17px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#smalllesson i {
+    padding-right: 10px;
+}
+
+#smalllesson span {
+    color: teal;
+    box-shadow: 0px 0px 1px teal;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: clamp(10px, 4vw, 14px);
+    margin: 3px;
+}
+
+.lesson_content h2 {
+    font-size: clamp(12px, 4vw, 20px);
+}
+
+.modles {
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.overall_lesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#frist_cor {
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+#second_mod{
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+#preview {
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#preview video {
+    border-radius: 20px;
+}
+
+#preview h1 {
+    font-size: 25px;
+    margin-top: 12px;
+    color: teal;
+}
+
+#progres_bar {
+    width: 600px;
+    height: 100px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#progres_bar h1{
+    font-size: clamp(17px,4vw,25px);
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .overall_lesson {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#frist_cor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.lesson_content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.lesson_content h1 {
+    font-size: clamp(15px,4vw,30px);
+}
+.modles {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px;
+}
+#second_mod{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+#preview {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+#smalllesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#progres_bar {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+}
+
+@media (min-width:500px) and (max-width:768px){
+    .overall_lesson {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#frist_cor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.lesson_content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.lesson_content h1 {
+    font-size: clamp(15px,4vw,30px);
+}
+.modles {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px;
+}
+#second_mod{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#preview {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+#smalllesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#progres_bar {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+}
+
+@media (min-width:769px) and (max-width:900px){
+    .overall_lesson {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#frist_cor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.lesson_content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.lesson_content h1 {
+    font-size: clamp(15px,4vw,30px);
+}
+.modles {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px;
+}
+#second_mod{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#preview {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+#smalllesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#progres_bar {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+}

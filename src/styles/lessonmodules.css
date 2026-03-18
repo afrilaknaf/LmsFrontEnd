@@ -1,0 +1,99 @@
+.Lesson_Content{
+    width: 90%;
+    height: 50px;
+    margin: 30px;
+    box-shadow: 0px 0px 2px teal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 128,0.1);
+}
+.Lesson_Content button{
+    width: 90%;
+    height: 100%;
+    text-align: start;
+    font-size: clamp(9px,4vw,12px);
+}
+
+#ch{
+    accent-color: black;
+    padding: 10px;
+}
+
+.lesson_button button{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 20px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: teal;
+        color: white;
+    }
+}
+
+.lesson_button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(9px,4vw,13px);
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lesson_buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(9px,4vw,13px);
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lesson_buttons button{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 20px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: teal;
+        color: white;
+    }
+}
+
+.lesson_button i{
+    margin:5px;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .Lesson_Content{
+    width: 90%;
+    height: 50px;
+    margin: 20px;
+    box-shadow: 0px 0px 2px teal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 128,0.1);
+}
+.lesson_button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+}

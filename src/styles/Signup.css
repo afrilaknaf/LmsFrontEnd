@@ -1,0 +1,212 @@
+.allcontent h1 {
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.allcontent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formcontent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#halfwhite {
+    max-width: 600px;
+    max-height: 500px;
+    padding: 20px;
+}
+
+#forminput {
+    width: 550px;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: black;
+    text-align: start;
+}
+
+#forminput form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+}
+
+
+#forminput button {
+    width: 480px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#forminput input {
+    width: 480px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .formcontent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.allcontent h1 {
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 180px;
+}
+.allcontent {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#forminput button {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#forminput input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#forminput {
+    width: 350px;
+    height: 100%;
+    color: black;
+    text-align: start;
+}
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .formcontent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.allcontent h1 {
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+.allcontent {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#forminput button {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#forminput input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#forminput {
+    width: 350px;
+    height: 100%;
+    color: black;
+    text-align: start;
+}
+}
+
+@media (min-width:800px) and (max-width:900px){
+    .formcontent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.allcontent h1 {
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 180px;
+}
+.allcontent {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#forminput button {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#forminput input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#forminput {
+    width: 350px;
+    height: 100%;
+    color: black;
+    text-align: start;
+}
+}
