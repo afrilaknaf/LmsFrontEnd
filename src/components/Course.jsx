@@ -13,23 +13,31 @@ export default function Course() {
 
     let navigate = useNavigate()
 
-    let Course_get = async () => {
-        try {
-            setLoading(true)
+let Course_get = async () => {
+    try {
+        setLoading(true)
 
-            const courseRes = await axios.get("https://lmsbackend-oadz.onrender.com/course_get")
-            setCourse_array(courseRes.data.data)
+        let userId = Cookies.get("id")
 
-            let userId = Cookies.get("id")
-            const userRes = await axios.get(`https://lmsbackend-oadz.onrender.com/users_course/${userId}`)
-            setIspurchased(userRes.data.data)
+        const [courseRes, userRes] = await Promise.all([
+            axios.get("https://lmsbackend-oadz.onrender.com/course_get"),
+            userId
+                ? axios.get(`https://lmsbackend-oadz.onrender.com/users_course/${userId}`)
+                : Promise.resolve({ data: { data: [] } })
+        ])
 
-        } catch (err) {
-            console.log(err)
-        } finally {
-            setLoading(false)
-        }
+        setCourse_array(courseRes.data.data)
+        setIspurchased(userRes.data.data)
+
+        // 🔥 ADD THIS (VERY IMPORTANT)
+        await new Promise(res => setTimeout(res, 800))
+
+    } catch (err) {
+        console.log(err)
+    } finally {
+        setLoading(false)
     }
+}
 
     useEffect(() => {
         Course_get()
